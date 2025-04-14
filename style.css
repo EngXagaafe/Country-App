@@ -1,0 +1,125 @@
+*::after, *::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial;
+    font-size: 18px;
+    margin: 0;
+    background: #12B0E8;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container {
+    width: 75vh;
+    padding: 50px;
+    max-width: 700px;
+    background: #fff;
+   
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .3);
+  
+}
+.search-wrapper{
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 15px;
+   
+    
+
+}
+.search-wrapper input{
+    padding: 15px;
+    border: 2px solid #383cc1;
+    border-radius: 10px;
+    outline: 0;
+    font-size: 18px;
+    color: rgb(8, 10, 22);
+    display: inline;
+    transition: all .3s ease-in-out;
+    display: inline-flexbox;
+  
+     
+}
+
+
+.search-wrapper button{
+    padding: 15px;
+    border: 0;
+    border-radius: 10px;
+    outline: 0;
+    font-size: 18px;
+    color: #fff;
+    background-color: #383cc1;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+
+
+#search-result img{
+    width: 200px;
+    height: 200px;
+
+
+} 
+#search-result {
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 1rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: left;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+#search-result span {
+    font-weight: bold;
+    color: rgba(10, 20, 8, 0.705);
+}
+
+.country-info-inline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.country-info-inline img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 1em;
+}
+
+.info-text {
+    display: inline;
+}
+/* 🔁 Responsive Layout for smaller screens */
+@media (max-width: 600px) {
+    .search-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .search-wrapper input,
+    .search-wrapper button {
+        width: 95%;
+    }
+
+    .info-text {
+        font-size: 0.95rem;
+        text-align: left;
+    }
+
+    .container {
+        padding: 25px 20px;
+    }
+}
+
+
